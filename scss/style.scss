@@ -156,7 +156,7 @@ button{
       justify-content: center;
       align-items: center;
       height: 150px;
-      z-index: 15;
+      z-index: 8;
       position: relative;
       box-sizing: border-box;
       .anchor{
@@ -397,7 +397,8 @@ button{
     align-items: center;
     margin: 30px 0;
     .clients{
-      width: 370px;
+      width: 30%;
+      min-width: 250px;
       h1{
         font-size: 2em;
         margin-bottom: 20px;
@@ -407,10 +408,29 @@ button{
         color: grey;
       }
     }
-    img{
-      width: 16%;
-      min-width: 140px;
-      margin: 20px 0;
+    .logos{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      width: 60%;
+      justify-content: space-between;
+      img{
+        width: 23%;
+        height: 23%;
+        margin-bottom: 10px;
+      }
+    }
+    @media screen and (max-width: 722px){
+      .clients, .logos{
+        width: 100%;
+      }
+        @media screen and (max-width: 500px){
+          .logos{
+            img{
+              width: 45%;
+            }
+          }
+        }
     }
   }
   .anna{
@@ -601,7 +621,9 @@ button{
       .contact{
         position: absolute;
         left: -355px;
-        width: 270px;
+        width: 250px;
+        padding-left: 40px;
+        box-sizing: border-box;
         top: 90px;
         border: none;
         background: white;
@@ -621,7 +643,7 @@ button{
           cursor: pointer;
         }
         &.visible{
-          left: -20px;
+          left: -60px;
         }
       }
     }
