@@ -424,7 +424,10 @@ button{
       .clients, .logos{
         width: 100%;
       }
-        @media screen and (max-width: 500px){
+      .clients{
+        margin-bottom: 20px;
+      }
+        @media screen and (max-width: 550px){
           .logos{
             img{
               width: 45%;
@@ -442,7 +445,7 @@ button{
     position: relative;
     background: #faf9f9;
     color: #a4a4a4;
-    margin-bottom: 70px;
+    margin-bottom: 80px;
     box-sizing: border-box;
     img{
       width: 100px;
